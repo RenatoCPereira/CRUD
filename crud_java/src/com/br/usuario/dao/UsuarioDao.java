@@ -95,14 +95,13 @@ public class UsuarioDao {
 			}
 		}
 
+		usuarios.forEach(u -> System.out.println("ID: " + u.getId() + " NOME: " + u.getNome() + " EMAIL: " + u.getEmail() + " SENHA: "
+				+ u.getSenha() + " TELEFONE: " + u.getTelefone()));
+
 		return usuarios;
+
 	}
 
-	public void listar() {
-		for (Usuario u : consultar()) {
-			System.out.println("ID: " + u.getId()  + 
-					" NOME: " + u.getNome());
-
-		}
-	}
+	
+	
 }
